@@ -18,7 +18,7 @@ namespace Ahorcado
         private string _palabraSecreta;
         private List<char> _letrasUsadas;
         private int _intentosRestantes;
-
+        private bool MostrarPista => _intentosRestantes <= 3;
         public Juego()
         {
             var random = new Random();
@@ -89,6 +89,11 @@ namespace Ahorcado
 
             Console.WriteLine($"Intentos restantes: {_intentosRestantes}");
             Console.WriteLine($"Letras usadas: {string.Join(", ", _letrasUsadas)}");
+
+            if (MostrarPista)
+            {
+                Console.WriteLine($"Pista: la palabra empieza con '{_palabraSecreta[0]}'");
+            }
 
             Console.Write("Palabra: ");
 

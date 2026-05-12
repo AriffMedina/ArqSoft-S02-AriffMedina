@@ -10,6 +10,7 @@ namespace Ahorcado
         private readonly List<char> _letrasUsadas = new();
         private int _intentosRestantes = 6;
 
+        public bool MostrarPista => _intentosRestantes <= 3;
         public string PalabraSecreta => _palabraSecreta;
         public List<char> LetrasUsadas => _letrasUsadas;
         public int IntentosRestantes => _intentosRestantes;
