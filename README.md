@@ -7,3 +7,6 @@ Un juego sencillo escrito en C#
 | `Juego` controla turnos, dibuja el tablero, muestra mensajes y elige la palabra | SRP (Single Responsibility Principle)|
 | Las palabras están hardcodeadas dentro del constructor | DIP (Dependency Inversion Principle) |
 | Para agregar un segundo juego habría que modificar `Juego` directamente | OCP (Open/Closed Principle) |
+
+# Viborita
+Un juego muy bonito de una viborita que se mueve por la pantalla y come comida para crecer.
