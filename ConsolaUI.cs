@@ -13,6 +13,19 @@ namespace Ahorcado
             _motor = motor;
         }
 
+        public static string pedirCategoria()
+        {
+            Console.WriteLine("-- Categorías --");
+            Console.WriteLine("1.- POO");
+            Console.WriteLine("2.- .NET");
+            Console.WriteLine("3.- Arquitectura");
+            Console.WriteLine("4.- Random");
+
+          
+            Console.Write("\nOpción (1/2/3/4): ");
+            return Console.ReadLine();
+        }
+
         public void MostrarTablero()
         {
             Console.Clear();

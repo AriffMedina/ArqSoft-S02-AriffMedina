@@ -1,4 +1,6 @@
-﻿var repositorio = new Ahorcado.PalabrasEnMemoria();
+﻿string opcion = Ahorcado.ConsolaUI.pedirCategoria();
+
+var repositorio = new Ahorcado.PalabrasEnMemoria(opcion);
 var motor = new Ahorcado.MotorAhorcado(repositorio);
 var ui = new Ahorcado.ConsolaUI(motor);
 
